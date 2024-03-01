@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-sky-950">
+
+    <div class="flex bg-white m-auto my-20 w-9/12">
+        <div>
+            <img src="../static/img/login.jpeg" alt="space" class="w-11/12">
+        </div>
+        <div class="bg-white mt-10 mr-20">
+            <h1 class="text-center text-4xl">Welcome to Project Stargazer</h1>
+            <br>
+            <div>
+                <form action="/register_user" method="post">
+                    <div>
+                        <label for="first_name">First Name: </label>
+                        <br>
+                        <input type="text" name="first_name" class="border border-black">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="last_name">Last Name: </label>
+                        <br>
+                        <input type="text" name="last_name" class="border border-black">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email: </label>
+                        <br>
+                        <input type="text" name="email" class="border border-black">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="password">Password: </label>
+                        <br>
+                        <input type="password" name="password" class="border border-black">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="confirm_password">Confirm PW: </label>
+                        <br>
+                        <input type="password" name="confirm_password" class="border border-black">
+                    </div>
+                    <br>
+                    <input type="submit" value="Register" class="bg-red-500 text-white p-2">
+                </form>
+                <br>
+                <p>Already a member? <a href="/" class="text-red-500">Login</a></p>
+            </div>
+            <div>
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                {% for message in messages %}
+                <p>{{message}}</p>
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

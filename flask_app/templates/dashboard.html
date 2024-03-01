@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-sky-950">
+
+    <div class="flex justify-between text-white mx-48 my-10">
+        <h1 class="text-4xl text-white">Welcome, {{ one_user.first_name }}!</h1>
+        <div class="flex gap-20">
+            <a href="/pod">Picture of the Day</a>
+            <a href="/explore">Explore</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+
+    <h2 class="text-white text-center text-xl">Your Favorite Space Pictures:</h2>
+    <br>
+
+    <div class="text-white text-center">
+        <ul>
+            {% for favorite in all_favorites %}
+            <li>
+                <a href="/favorites/{{ favorite.id }}">{{ favorite.date }} </a>
+                |
+                <a href="/favorite/delete/{{ favorite.id }}">Delete</a>
+
+
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+    <img src="../static/img/funny.jpeg" alt="astronaut" class="m-auto mt-10">
+
+</body>
+
+</html>

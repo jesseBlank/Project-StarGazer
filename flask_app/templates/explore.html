@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-sky-950">
+
+    <div class="flex justify-between text-white mx-48 my-10">
+        <h1 class="text-4xl text-white">Welcome, {{ one_user.first_name }}!</h1>
+        <div class="flex gap-20">
+            <a href="/dashboard">Dashboard</a>
+            <a href="/pod">Picture of the Day</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+
+    <div class="flex gap-20 justify-center my-10">
+        <button class="bg-white p-2" onclick="getSpaceData()">Explore</button>
+        <button class="bg-white p-2" onclick="addFavorite()">Favorite</button>
+    </div>
+    <div id="space" class="bg-white mx-auto w-1/2">
+
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
