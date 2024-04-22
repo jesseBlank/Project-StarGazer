@@ -1,10 +1,10 @@
-# Stargazer
+# Project Stargazer
 
-Stargazer is a web application designed to provide users with a fascinating journey through the cosmos. This repository contains the source code for the Stargazer project.
+Project Stargazer is a web application designed to provide users with a fascinating journey through the cosmos. This repository contains the source code for Project Stargazer.
 
 ## Overview
 
-Stargazer allows users to explore the wonders of space through a collection of stunning images, informative articles, and interactive tools. Whether you're a seasoned astronomer or a casual stargazer, Stargazer offers something for everyone.
+Project Stargazer allows users to explore the wonders of space through a collection of stunning images, informative articles, and interactive tools. Whether you're a seasoned astronomer or a casual stargazer, Project Stargazer offers something for everyone.
 
 ## Features
 
@@ -33,7 +33,7 @@ To get a local copy up and running, follow these steps:
 
 ## Contact
 
-For any inquiries or feedback, please contact the project maintainers:
+For any inquiries or feedback, please contact the project maintainer:
 
 - Jesse Blank:
   LinkedIN: https://www.linkedin.com/in/jesse-blank/
