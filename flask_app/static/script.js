@@ -1,14 +1,14 @@
 
 
 async function getSpaceData(spaceDate = randomDate()) {
-    var response = await fetch("https://api.nasa.gov/planetary/apod?api_key=<<API_KEY>>" + spaceDate);
+    var response = await fetch("https://api.nasa.gov/planetary/apod?api_key=FblroGslIYdgJdESn2iSQaWSCziLsWBD6GZUfGqb&date=" + spaceDate);
     var spaceData = await response.json();
     console.log(spaceData);
     displayPicture(spaceData);
 }
 
 async function getPOD() {
-    var response = await fetch("https://api.nasa.gov/planetary/apod?api_key=<<API_KEY>>");
+    var response = await fetch("https://api.nasa.gov/planetary/apod?api_key=FblroGslIYdgJdESn2iSQaWSCziLsWBD6GZUfGqb&date=");
     var spaceData = await response.json();
     console.log(spaceData);
     displayPicture(spaceData);
